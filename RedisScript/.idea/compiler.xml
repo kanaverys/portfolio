@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Redis" />
         <module name="18.2.2" />
+        <module name="RedisScript" />
       </profile>
     </annotationProcessing>
   </component>

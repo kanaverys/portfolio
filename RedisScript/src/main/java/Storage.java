@@ -29,19 +29,25 @@ public class Storage {
         studentsMap.readAllEntrySet().forEach(System.out::println);
     }
 
-    public boolean increment(String student, String course, int inc) {
-        if (!studentsMap.containsKey(student) || inc <= 0) {
-            return false;
-        }
+    public void print(String name){
+        System.out.println(studentsMap.get(name));
+    }
 
-        Map<String, Integer> studentCoursesMap = studentsMap.get(student);
-        if (!studentCoursesMap.containsKey(course)) {
-            return false;
+    public void remove(String name){
+        studentsMap.remove(name);
+    }
+
+    public void removeAll(){
+        for (String s : studentsMap.keySet()) {
+            studentsMap.remove(s);
         }
+    }
+
+    public void increment(String student, String course, int inc) {
+        Map<String, Integer> studentCoursesMap = studentsMap.get(student);
 
         studentCoursesMap.put(course, studentCoursesMap.get(course) + inc);
         studentsMap.remove(student);
         studentsMap.put(student, studentCoursesMap);
-        return true;
     }
 }

@@ -19,7 +19,7 @@
             <button id="save-book">Сохранить</button>
         </form>
     </div>
-    <h1>Библиотека (<span th:text="${booksCount}">0</span>)</h1>
+    <h1>Библиотека</h1>
     <button id="show-add-book-form">Добавить книгу</button>
     <br><br>
     <div id="book-list">
@@ -27,6 +27,5 @@
             <a href="#" class="book-link" th:attr="data-id=${book.id}" th:text="${book.name}"></a>
         </div>
     </div>
-    <p th:text="${someParameter}"></p>
 </body>
 </html>

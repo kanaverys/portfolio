@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="19.1" />
+        <module name="DesktopApplication" />
         <module name="Desktop_Application" />
       </profile>
     </annotationProcessing>

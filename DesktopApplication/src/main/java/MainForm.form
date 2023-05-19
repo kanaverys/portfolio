@@ -100,7 +100,7 @@
       <component id="5d5a1" class="javax.swing.JButton" binding="button1">
         <constraints border-constraint="South"/>
         <properties>
-          <text value="Collapse"/>
+          <text value="Свернуть"/>
         </properties>
       </component>
     </children>

@@ -10,6 +10,7 @@ public class Main {
     public static void main(String[] args) {
         ServerSocket serverSocket;
         final Socket[] socket = new Socket[1];
+        new GUI();
 
         try{
             serverSocket = new ServerSocket(1234);
@@ -34,7 +35,5 @@ public class Main {
         catch (Exception ex){
             ex.printStackTrace();
         }
-
-    new GUI();
     }
 }

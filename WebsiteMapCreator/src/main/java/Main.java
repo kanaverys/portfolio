@@ -15,6 +15,7 @@ public class Main {
             LinkExecutor executor = new LinkExecutor(url);
             new ForkJoinPool().invoke(executor);
         }
+
         catch (Exception ex){
             ex.printStackTrace();
         }

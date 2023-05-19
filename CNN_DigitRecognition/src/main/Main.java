@@ -50,17 +50,17 @@ public class Main {
             ex.printStackTrace();
         }
 
-//        int[] layerSizes = {169, 128, 64, 10};
+//        int[] layerSizes = {169, 128, 128, 10};
 //        setupNetwork(-1, 1, 4, layerSizes);
-
-
+//
+//
 //        long time = System.currentTimeMillis();
 //        train(0.3, 10);
 //        System.out.println((System.currentTimeMillis() - time) / 1000d + " сек.");
 //        System.out.println(test());
 //        saveNetwork();
 
-        loadNetwork("src/resources/saves/save_319.txt");
+        loadNetwork("src/resources/saves/save_819.txt");
 
         Scanner scanner = new Scanner(System.in);
         while(true){
